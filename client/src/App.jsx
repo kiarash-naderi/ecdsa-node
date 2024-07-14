@@ -18,7 +18,7 @@ const App = () => {
       setPrivateKey(privateKey);
       setPublicKey(publicKey);
       console.log(`Generated key pair: Private Key: ${privateKey}, Public Key: ${publicKey}`);
-      getBalance(publicKey); // به‌روزرسانی موجودی بعد از تولید کلید
+      getBalance(publicKey); 
     } catch (error) {
       console.error('Error generating key pair:', error);
     }
@@ -59,7 +59,7 @@ const App = () => {
         signature,
       });
       console.log('Transaction sent successfully', response.data);
-      getBalance(); // به‌روزرسانی موجودی بعد از ارسال تراکنش
+      getBalance(); 
     } catch (error) {
       console.error('Error sending transaction:', error.response ? error.response.data : error.message);
     }
